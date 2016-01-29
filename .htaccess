@@ -1,0 +1,11 @@
+# Uncomment to return php errors
+#php_flag display_errors 1
+
+RewriteEngine on
+
+# Uncomment to enforce HTTPS
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond $1 !^(index\.php|images|script|style|uploads|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
