@@ -1,0 +1,5 @@
+*.scssc
+
+node_modules/
+
+images/blog
