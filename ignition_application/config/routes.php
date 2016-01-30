@@ -53,6 +53,7 @@ $route['logout'] = 'auth/logout';
 $route['login'] = 'auth/login';
 $route['forgot'] = 'auth/forgotPassword';
 $route['forgotReset'] = 'auth/forgotPasswordReset';
+$route['forgotReset'] = 'auth/appLogin';
 
 $route['search'] = 'search';
 $route['search/(:any)'] = 'search/index/$1';
