@@ -1,4 +1,4 @@
 <div class="jumbotron">
-	<h1>Ignition</h1>
-	<p>A website foundation built on <a href="http://www.codeigniter.com/">CodeIgniter</a>.</p>
+	<h1>DumpLog</h1>
+	<p>Track your bowel movements on the go.</p>
 </div>
