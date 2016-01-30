@@ -23,7 +23,7 @@
                       <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand clearfix" href="/">
-                    <div class="navbar-brandname pull-left">Ignition</div>
+                    <div class="navbar-brandname pull-left">DumpLog</div>
                   </a>
               </div>
               <div class="navbar-collapse collapse">
