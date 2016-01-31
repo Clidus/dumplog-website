@@ -27,8 +27,12 @@ class Auth extends IG_Auth {
 			$result['error'] = true;
 		}
 
-		// return result
-        echo json_encode($result);
+		// return result 
+        //echo json_encode($result);
+
+        $this->output
+			->set_content_type('application/json')
+			->set_output(json_encode($result));
 	}
 
 }
