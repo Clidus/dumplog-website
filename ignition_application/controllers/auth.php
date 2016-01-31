@@ -22,15 +22,12 @@ class Auth extends IG_Auth {
 
 		// check that username exists
 		if (array_key_exists("username", $requestBody)) {
-		    $result['username'] = $requestBody["username"];
+			$result['username'] = $requestBody["username"];
 		} else {
 			$result['error'] = true;
 		}
 
-		// return result 
-        //echo json_encode($result);
-
-        $this->output
+		$this->output
 			->set_content_type('application/json')
 			->set_output(json_encode($result));
 	}
