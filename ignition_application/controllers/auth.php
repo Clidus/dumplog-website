@@ -29,7 +29,10 @@ class Auth extends IG_Auth {
 
 			// send password reset email
 			$this->load->model('User');
-			if(!$this->User->login($username, $password)) {
+			if($this->User->login($username, $password)) {
+				// success, return userID hash
+				$result['userID'] = "1234"; // TODO: hash UserID
+			} else {
 				// failed, return error
 				$result['success'] = false;
 				$result['errorMessage'] = "Sorry duder, that seems to be the wrong username or password. Please try again.";
